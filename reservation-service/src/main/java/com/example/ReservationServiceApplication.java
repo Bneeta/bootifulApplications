@@ -47,10 +47,7 @@ public class ReservationServiceApplication {
 		};
 	}
 
-	@Bean
-	HealthIndicator healthIndicator() {
-		return () -> Health.status("I <3 JFokus!").build();
-	}
+
 
 	public static void main(String[] args) {
 		SpringApplication.run(ReservationServiceApplication.class, args);
